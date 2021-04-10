@@ -1,6 +1,6 @@
 # Trivial Violetos PRO
 
-Pon a prueba tu intelecto , cultura general y habilidad social y matemática a través del más selecto trivial jamás creado. Gana a tus amigos 
+Pon a prueba tu intelecto , cultura general y habilidad social y matemática a través del más selecto quiz jamás creado. Gana a tus amigos 
 y demuestra quién va a la cabeza en cuanto a coeficiente intelectual se refiere recolectando todos los VIOLETOS posibles .
 
 
