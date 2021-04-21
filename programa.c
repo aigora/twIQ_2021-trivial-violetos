@@ -42,6 +42,7 @@ int main () {
 			printf("1-Al inicio del juego, cada uno de los integrantes del mismo deberÃƒÂ¡n de elegir un numero 1-6 incluidos,\n");
 			printf(" el mayor de estos determinara quien va a comenzar la partida (en caso de empate, ambos deberÃƒÂ¡n de \n");
 			printf(" elegir de nuevo un numero).\n");
+			printf(" \n");
 			
 			printf("2-Las categorias de este juego son:\n");
 			printf(" -Ciencias.\n");
@@ -52,15 +53,19 @@ int main () {
 			
 			printf("A la hora de elegir una temática . el jugador decidirá el orden de enfrentarse a cada uno  de los 4 temas\n");
 			printf("que han sido indicados anteriormente.\n");
+			printf(" \n");
 			
 			printf("3-Cuando el jugador acierta la pregunta correspondiente a dicha categoria consigue VIOLETOS (puntos) en \n");
 			printf("  función de la dificultad considerada de esta .\n");
+			printf(" \n");
 			
 			printf("4-El usuario contestará a las preguntas en orden de menor a mayor dificultad , sumando VIOLETOS de cada  \n");
 			printf(" categoría hasta el fallo , momento en el cual tendrá la opción de escoger otra categoría y no podrá .\n");
 			printf(" responder a más cuestiones de la errada. Este proceso será repetido hasta completar todas las categorías.\n");
+			printf(" \n");
 			
 			printf("5.Tras responder a todas las preguntas , se mostrará la puntuación obtenida y los registros de cada categoría.");
+			printf(" \n");
 			break;
 			
 			
