@@ -2,8 +2,9 @@
 
 int main () {
 	
-	char opcion, jugador1, jugador2, numero1, numero2; 
-	//	La partida consistirÃ¡ en que cada jugador contarÃ¡ con una caja con 4 'quesitos'/triÃ¡ngulos, que hemos denominado Violetos, y el ganador del juego serÃ¡ aquel que consiga completar su caja de Violetos. Cada Violeto se consigue acertando durante la partida 1 pregunta de cada una de las 4 temÃ¡ticas que estarÃ¡n en la ruleta. /
+	char  nombre[50], opcion;
+	int opcion1;
+	
 
 	do{
 	printf("BIENVENIDO AL MENU DE TRIVIAL_VIOLETOS \n");
@@ -18,28 +19,17 @@ int main () {
 	switch (opcion){
 		case 'i':
 		case 'I':
-			printf("Jugador.1 introduzca su nombre de usuario:\n");
+			printf("Jugador introduzca su nombre de usuario:\n");
 			fflush(stdin);
-			scanf("%c",&jugador1);
-			
-			printf("Jugador.2 introduzca su nombre de usuario:\n");
-			fflush ( stdin );
-			scanf("%c",&jugador2);
-			
-			printf("Jugador 1; Elija un número del 1 al 6:\n");
-			fflush(stdin);
-			scanf("%c",&numero1);
-			
-			printf("Jugador 2; Elija un número del 1 al 6:\n");
-			fflush(stdin);
-			scanf("%c",&numero2);
-			
-			if (numero1>numero2)
-			printf("Empieza jugador 1");
-			
-			if(numero1<numero2)
-			printf("Empieza jugador 2");
-			
+			scanf("%s",&nombre);
+			printf("Perfecto %s ahora deber�s de elegir una categoria para empezar el juego:\n",nombre);
+			printf("Las categorias de este juego son:\n");
+			printf(" 1-Ciencias.\n");
+			printf(" 2-Deportes.\n");
+			printf(" 3-Entretenimiento.\n");
+			printf(" 4-Geografia y Historia.\n");
+			printf(" \n\n");
+			scanf("%d",&opcion1);
 			break;
 			
 		case 'r':
@@ -56,8 +46,8 @@ int main () {
 			printf("2-Las categorias de este juego son:\n");
 			printf(" -Ciencias.\n");
 			printf(" -Deportes.\n");
-			printf(" -Moda y Cine.\n");
-			printf(" -Geografia.\n");
+			printf(" -Entretenimiento.\n");
+			printf(" -Geografia y Historia.\n");
 			printf(" \n\n");
 			
 			printf("A la hora de elegir una tematica, aparecera una ruleta que determinara que tipo de pregunta se realizara, dentro de los 4 temas");
