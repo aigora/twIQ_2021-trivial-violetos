@@ -22,7 +22,7 @@ int main () {
 			printf("Jugador introduzca su nombre de usuario:\n");
 			fflush(stdin);
 			scanf("%s",&nombre);
-			printf("Perfecto %s ahora deber�s de elegir una categoria para empezar el juego:\n",nombre);
+			printf("Perfecto %s ahora deberás de elegir una categoria para empezar el juego:\n",nombre);
 			printf("Las categorias de este juego son:\n");
 			printf(" 1-Ciencias.\n");
 			printf(" 2-Deportes.\n");
@@ -34,33 +34,33 @@ int main () {
 			
 		case 'r':
 		case 'R':
-			printf("Trivial_Violetos; es un juego  basado en preguntas y respuestas,en el cual hay 4 categorias (participantes:2max y min).\n");
-			printf("El usuario tendra que obtener antes de finalizar la partida todos los Violetos posibles de las distintas categorias,\n");
-			printf(" y con ello ser el GANADOR DE LA PARTIDA.\n");
+			printf("Trivial_Violetos; es un juego  basado en preguntas y respuestas,en el cual hay 4 categorias de preguntas\n");
+			printf("para el jugador. El usuario tendra que aceptar una serie de preguntas de las distintas categorias,\n");
+			printf(" y con ello se le asignará una puntuación general , y una en cada categoría.\n");
 			printf(" \n");
 			
-			printf("1-Al inicio del juego, cada uno de los integrantes del mismo deberÃ¡n de elegir un numero 1-6 incluidos,\n");
-			printf("el mayor de estos determinara quien va a comenzar la partida (en caso de empate, ambos deberÃ¡n de elegir de nuevo un numero).\n");
-			printf(" \n");
+			printf("1-Al inicio del juego, cada uno de los integrantes del mismo deberÃƒÂ¡n de elegir un numero 1-6 incluidos,\n");
+			printf(" el mayor de estos determinara quien va a comenzar la partida (en caso de empate, ambos deberÃƒÂ¡n de \n");
+			printf(" elegir de nuevo un numero).\n");
 			
 			printf("2-Las categorias de este juego son:\n");
 			printf(" -Ciencias.\n");
 			printf(" -Deportes.\n");
 			printf(" -Entretenimiento.\n");
-			printf(" -Geografia y Historia.\n");
-			printf(" \n\n");
+			printf(" -Geografia e historia.\n");
+			printf(" \n");
 			
-			printf("A la hora de elegir una tematica, aparecera una ruleta que determinara que tipo de pregunta se realizara, dentro de los 4 temas");
-			printf("indicados anteriormente.\n");
+			printf("A la hora de elegir una temática . el jugador decidirá el orden de enfrentarse a cada uno  de los 4 temas\n");
+			printf("que han sido indicados anteriormente.\n");
 			
-			printf("3-Cuando el jugador acierta la pregunta correspondiente a dicha categoria consigue 1 VIOLETO y con ello la opcion de cambiar de categoria,\n");
-			printf("  en el caso de no acertar la pregunta perdera turno y le tocara al siguiente jugador y asi consecutivamente.\n");
+			printf("3-Cuando el jugador acierta la pregunta correspondiente a dicha categoria consigue VIOLETOS (puntos) en \n");
+			printf("  función de la dificultad considerada de esta .\n");
 			
-			printf("4-El usuario que consiga recolectar lo antes posible los 4 VIOLETOS \n");
-			printf(" (correspondientes a cada una de las categorias mencionadas al incio) gana la partida y con ello se proclama GANADOR DEL JUEGO!!.\n");
+			printf("4-El usuario contestará a las preguntas en orden de menor a mayor dificultad , sumando VIOLETOS de cada  \n");
+			printf(" categoría hasta el fallo , momento en el cual tendrá la opción de escoger otra categoría y no podrá .\n");
+			printf(" responder a más cuestiones de la errada. Este proceso será repetido hasta completar todas las categorías.\n");
 			
-			printf("5.	Por cada victoria, se conseguirá una bonificación en forma de piezas para 'Violeteros', que son las cajas en las que se guardan");
-			printf("los Violetos, con diferentes formas y tonalidades.");
+			printf("5.Tras responder a todas las preguntas , se mostrará la puntuación obtenida y los registros de cada categoría.");
 			break;
 			
 			
