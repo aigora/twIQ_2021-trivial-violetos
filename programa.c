@@ -30,11 +30,7 @@ int main () {
 			printf("Jugador introduzca su nombre de usuario:\n");
 			fflush(stdin);
 			scanf("%s",&nombre);
-<<<<<<< HEAD
 			printf("Perfecto %s ahora deberas de elegir una categoria para empezar el juego:\n",nombre);
-=======
-			printf("Perfecto %s ahora deberás de elegir una categoria para empezar el juego:\n",nombre);
->>>>>>> 97b8a8a60d97c5c6e1609c78f9912c44ed6b2f1a
 			printf("Las categorias de este juego son:\n");
 			printf(" 1-Ciencias.\n");
 			printf(" 2-Deportes.\n");
