@@ -12,7 +12,7 @@ int main () {
 	char  nombre[50], opcion;
 	int opcion1;
 	
-	system("color 50");
+//	system("color 50");
 
 	do{
 	printf("BIENVENIDO AL MENU DE TRIVIAL_VIOLETOS \n");
