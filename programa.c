@@ -75,7 +75,7 @@ int main () {
 			printf(" -Geografia e historia.\n");
 			printf(" \n");
 			
-			printf("A la hora de elegir una temática . el jugador decidirá el orden de enfrentarse a cada uno  de los 4 temas\n");
+			printf("A la hora de elegir una tematica . el jugador decidira el orden de enfrentarse a cada uno de los 4 temas\n");
 			printf("que han sido indicados anteriormente.\n");
 			printf(" \n");
 			
@@ -83,12 +83,12 @@ int main () {
 			printf("  función de la dificultad considerada de esta .\n");
 			printf(" \n");
 			
-			printf("4-El usuario contestará a las preguntas en orden de menor a mayor dificultad , sumando VIOLETOS de cada  \n");
-			printf(" categoría hasta el fallo , momento en el cual tendrá la opción de escoger otra categoría y no podrá .\n");
-			printf(" responder a más cuestiones de la errada. Este proceso será repetido hasta completar todas las categorías.\n");
+			printf("4-El usuario contestara a todas las preguntas de una en una con 4 opciones , sumando VIOLETOS de cada  \n");
+			printf(" categoria si no falla , lo cual no sumara puntuacion alguna , siguiendo las preguntas hasta completar  .\n");
+			printf(" la seccion previamente elegida. Este proceso sera repetido hasta completar todas las categorías.\n");
 			printf(" \n");
 			
-			printf("5.Tras responder a todas las preguntas , se mostrará la puntuación obtenida y los registros de cada categoría.");
+			printf("5.Tras responder a todas las preguntas , se mostrara la puntuacion obtenida y los registros de cada categoria.");
 			printf(" \n");
 			break;
 			
