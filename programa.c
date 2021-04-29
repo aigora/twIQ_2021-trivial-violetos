@@ -30,13 +30,13 @@ int main () {
 			printf("Jugador introduzca su nombre de usuario:\n");
 			fflush(stdin);
 			scanf("%s",&nombre);
-			printf("Perfecto %s ahora deberas de elegir una categoria para empezar el juego:\n",nombre);
+			printf("Perfecto %s ahora deberas de elegir una categoria para empezar el juego respondiendo con 1,2,3 o 4:\n",nombre);
 			printf("Las categorias de este juego son:\n");
 			printf(" 1-Ciencias.\n");
 			printf(" 2-Deportes.\n");
 			printf(" 3-Entretenimiento.\n");
 			printf(" 4-Geografia y Historia.\n");
-			printf(" \n\n");
+			printf(" \n");
 			scanf("%d",&opcion1);
 				switch(opcion1){
 					case 1:
