@@ -24,6 +24,25 @@ void imprimirDeportes(){
 	printf("                                          \n");
 
 };
+void imprimirEntretenimiento(){
+	printf("Usted ha elegido la opcion de:                \n");
+	printf("                                              \n");
+	printf(":P   :P    :P    :P    :P     :P   :P    :P   \n");
+	printf("   :)   :)    :)    :)    :)     :)   :)    :)\n");
+	printf("       E N T R E T E N I M I E N T O          \n");
+	printf(":P   :P    :P    :P    :P     :P   :P    :P   \n");
+	printf("   :)   :)    :)    :)    :)     :)   :)    :)\n");
+};
+void imprimirGeoHis(){
+	printf("Usted ha elegido la opcion de:                  \n");
+	printf("  __________________________________________    \n");
+	printf(" | ---------  G E O F R A F I A  ---------- |   \n");
+	printf(" | ---------                     ---------- |   \n");
+	printf(" | ---------          E          ---------- |   \n");
+	printf(" | ---------                     ---------- |   \n");
+	printf(" | ---------   H I S T O R I A   ---------- |   \n");
+	printf(" |__________________________________________|   \n");
+};
 char menu(){
 	char opcion;
 	printf("-------BIENVENIDO AL MENU DE TRIVIAL_VIOLETOS------- \n");
@@ -36,7 +55,7 @@ char menu(){
 	fflush(stdin);
 	scanf("%c",&opcion);
 	return opcion;
-}
+};
 
 int main () {
 	
@@ -77,23 +96,9 @@ int main () {
 	
 
 	do{
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-		opcion=menu();
 
-=======
->>>>>>> Stashed changes
-	printf(" \n");
-	printf("BIENVENIDO AL MENU DE TRIVIAL-VIOLETOS \n");
-	printf("El mejor entretenimiento de estos tiempos :) \n");
-	printf(" \n"); 
-	printf("I (Iniciar partida), R (Reglas del juego), S (Salir del programa) \n");
-	
-	printf("INTRODUZCA LA OPCION:\n");
-	fflush(stdin);
-	scanf("%c",&opcion);
->>>>>>> 5ddf489c37bc9cf339a8b1851d7d936513a7c38c
+
+		opcion=menu();
 	
 	switch (opcion){
 		case 'i':
@@ -109,43 +114,24 @@ int main () {
 			printf(" 2-Deportes.\n");
 			printf(" 3-Entretenimiento.\n");
 			printf(" 4-Geografia y Historia.\n");
-			printf("Â¿Que categoria escoges? \n");
+			printf("¿Que categoria escoges? \n");
 			printf(" \n");
 			scanf("%d",&opcion1);
 				switch(opcion1){
 					case 1:
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
+
 						imprimirCiencias();
 						
 						break;
 					case 2:
 						imprimirDeportes();
-=======
->>>>>>> Stashed changes
-						printf("************\n");
-						printf("--CIENCIAS--\n");
-						printf("************\n");
-						break;
-					case 2:
-						printf("************\n");
-						printf("--DEPORTES--\n");
-						printf("************\n");
-<<<<<<< Updated upstream
-=======
->>>>>>> 5ddf489c37bc9cf339a8b1851d7d936513a7c38c
->>>>>>> Stashed changes
+
 						break;
 					case 3:
-						printf("*******************\n");
-						printf("--ENTRETENIMIENTO--\n");
-						printf("*******************\n");
+						imprimirEntretenimiento();
 						break;
 					case 4:
-						printf("************************\n");
-						printf("--Geografia y Historia--\n");
-						printf("************************\n");
+						imprimirGeoHis();
 						break;
 					
 				}
