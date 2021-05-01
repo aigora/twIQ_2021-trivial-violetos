@@ -66,14 +66,14 @@ char menu(){
 
 int main () {
 	
-	system("color 50");
+	system("color 57");
     HANDLE hOut;
     hOut = GetStdHandle(STD_OUTPUT_HANDLE);
 	
 	char  nombre[50], opcion;
 	int opcion1;
 	
-//	system("color 50");
+
 	printf("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n");
 	char banner[]={"*-*-*-*-{ TRIVIAL  VIOLETOS }-*-*-*-*-*-{ TRIVIAL  VIOLETOS }-*-*-*-*-*{ TRIVIAL  VIOLETOS }-*-*-*-*"};
 	unsigned short longitud, indice, espacio, repite, resto;
@@ -108,7 +108,7 @@ int main () {
 
 	do{
 
-
+		system("cls");
 		opcion=menu();
 	
 	switch (opcion){
@@ -119,13 +119,13 @@ int main () {
 			fflush(stdin);
 			scanf("%s",&nombre);//introduce y se guarda el nombre del jugador
 			printf(" \n");
-			printf("Perfecto %s ahora deberas de elegir una categoria para empezar el juego respondiendo con 1,2,3 o 4:\n",nombre);
-			printf("Las categorias de este juego son:\n");
+			printf("Perfecto %s ahora deber%cs de elegir una categor%cas para empezar el juego respondiendo con 1,2,3 o 4:\n",nombre,160,161);
+			printf("Las categor%cas de este juego son:\n",161);
 			printf(" 1-Ciencias.\n");
 			printf(" 2-Deportes.\n");
 			printf(" 3-Entretenimiento.\n");
 			printf(" 4-Geografia y Historia.\n");
-			printf("¿Que categoria escoges? :o \n");
+			printf("¿Que categor%ca escoges? :o \n",161);
 			printf(" \n");
 			scanf("%d",&opcion1);
 				switch(opcion1){
@@ -153,6 +153,7 @@ int main () {
 			
 		case 'r':
 		case 'R':
+			system("cls");
 			printf("Trivial-Violetos; es un juego  basado en preguntas y respuestas,en el cual hay 4 categorias de preguntas\n");
 			printf("para el jugador. El usuario tendra que aceptar una serie de preguntas de las distintas categorias,\n");
 			printf(" y con ello se le asignara una puntuacion general , y una en cada categoria.\n");
@@ -180,11 +181,12 @@ int main () {
 			
 			printf("4-El usuario contestara a todas las preguntas de una en una con 4 opciones , sumando VIOLETOS de cada  \n");
 			printf(" categoria si no falla , lo cual no sumara puntuacion alguna , siguiendo las preguntas hasta completar  .\n");
-			printf(" la seccion previamente elegida. Este proceso sera repetido hasta completar todas las categorÃ­as.\n");
+			printf(" la seccion previamente elegida. Este proceso sera repetido hasta completar todas las categoralt+161as.\n");
 			printf(" \n");
 			
-			printf("5.Tras responder a todas las preguntas , se mostrara la puntuacion obtenida y los registros de cada categoria.");
-			printf(" \n");
+			printf("5.Tras responder a todas las preguntas , se mostrara la puntuacion obtenida y los registros de cada categor%ca.",161);
+			printf("\n\n");
+			system("pause");
 			break;	//aqui acaban las reglas , simplemente se leen
 			
 			
