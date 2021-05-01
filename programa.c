@@ -7,7 +7,36 @@ struct Jugador{
 	char nombre[50];
 	int numerador;
 };
+void imprimirCiencias(){
+	printf("Usted ha elegido la opcion de:       \n");
+	printf("                                     \n");
+	printf("     C            C             S    \n");
+	printf("        I     N       I      S       \n");
+	printf("           E             A           \n");
+};
+void imprimirDeportes(){ 
+	printf("Usted ha elegido la opcion de:  \n");
+	printf("                                          \n");
+	printf("     ****                       ****      \n");
+	printf("    ******   D E P O R T E S   ******     \n");
+	printf("    ******                     ******     \n");
+	printf("     ****                       ****      \n");
+	printf("                                          \n");
 
+};
+char menu(){
+	char opcion;
+	printf("-------BIENVENIDO AL MENU DE TRIVIAL_VIOLETOS------- \n");
+	printf("  (: El mejor entretenimiento de estos tiempos :) \n");
+	printf("   \n"); 
+	printf("----> Pulse S para (salir del programa).\n");
+	printf("----> Pulse I para (iniciar partida).\n");
+	printf("----> Pulse R para (reglas del juego).\n");
+	printf("  \n ");
+	fflush(stdin);
+	scanf("%c",&opcion);
+	return opcion;
+}
 
 int main () {
 	
@@ -48,6 +77,13 @@ int main () {
 	
 
 	do{
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+		opcion=menu();
+
+=======
+>>>>>>> Stashed changes
 	printf(" \n");
 	printf("BIENVENIDO AL MENU DE TRIVIAL-VIOLETOS \n");
 	printf("El mejor entretenimiento de estos tiempos :) \n");
@@ -57,6 +93,7 @@ int main () {
 	printf("INTRODUZCA LA OPCION:\n");
 	fflush(stdin);
 	scanf("%c",&opcion);
+>>>>>>> 5ddf489c37bc9cf339a8b1851d7d936513a7c38c
 	
 	switch (opcion){
 		case 'i':
@@ -77,6 +114,16 @@ int main () {
 			scanf("%d",&opcion1);
 				switch(opcion1){
 					case 1:
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+						imprimirCiencias();
+						
+						break;
+					case 2:
+						imprimirDeportes();
+=======
+>>>>>>> Stashed changes
 						printf("************\n");
 						printf("--CIENCIAS--\n");
 						printf("************\n");
@@ -85,6 +132,10 @@ int main () {
 						printf("************\n");
 						printf("--DEPORTES--\n");
 						printf("************\n");
+<<<<<<< Updated upstream
+=======
+>>>>>>> 5ddf489c37bc9cf339a8b1851d7d936513a7c38c
+>>>>>>> Stashed changes
 						break;
 					case 3:
 						printf("*******************\n");
