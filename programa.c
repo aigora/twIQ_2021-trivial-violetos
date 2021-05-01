@@ -1,11 +1,18 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
+#include<stdlib.h>
+#include <windows.h>
 
 
 struct Jugador{
 	char nombre[50];
 	int numerador;
+};
+void imprimirAdios(){
+	printf(":D :D :D :D :D |     H A S T A     | :D :D :D :D :D\n");
+	printf(":D :D :D :D :D |    P R O N T O    | :D :D :D :D :D\n");
+	printf(":D :D :D :D :D |   J U G A D O R   | :D :D :D :D :D\n");
 };
 void imprimirCiencias(){
 	printf("Usted ha elegido la opcion de:       \n");
@@ -58,6 +65,10 @@ char menu(){
 };
 
 int main () {
+	
+	system("color 50");
+    HANDLE hOut;
+    hOut = GetStdHandle(STD_OUTPUT_HANDLE);
 	
 	char  nombre[50], opcion;
 	int opcion1;
@@ -114,24 +125,26 @@ int main () {
 			printf(" 2-Deportes.\n");
 			printf(" 3-Entretenimiento.\n");
 			printf(" 4-Geografia y Historia.\n");
-			printf("¿Que categoria escoges? \n");
+			printf("¿Que categoria escoges? :o \n");
 			printf(" \n");
 			scanf("%d",&opcion1);
 				switch(opcion1){
 					case 1:
 
 						imprimirCiencias();
-						
+						return 0;
 						break;
 					case 2:
 						imprimirDeportes();
-
+						return 0;
 						break;
 					case 3:
 						imprimirEntretenimiento();
+						return 0;
 						break;
 					case 4:
 						imprimirGeoHis();
+						return 0;
 						break;
 					
 				}
@@ -177,7 +190,7 @@ int main () {
 			
 		case 's':  
 		case 'S':
-			printf("Hasta pronto!!!\n");
+			imprimirAdios();
 			return 0;//salir del programa
 		default:
 		printf("la opcion es incorrecta:\n");
@@ -187,3 +200,4 @@ int main () {
 	
 	return 0;
 }
+
