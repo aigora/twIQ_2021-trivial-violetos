@@ -111,8 +111,8 @@ int main () {
 		system("cls");
 		opcion=menu();
 	
-	switch (opcion){
-		case 'i':
+	switch (opcion){		//Aquí se organiza el menú en función de la opción elegida
+		case 'i':		//por el usuario .
 		case 'I':
 			printf(" \n");
 			printf("Jugador introduzca su nombre de usuario:\n");
@@ -125,7 +125,7 @@ int main () {
 			printf(" 2-Deportes.\n");
 			printf(" 3-Entretenimiento.\n");
 			printf(" 4-Geografia y Historia.\n");
-			printf("�Que categor%ca escoges? :o \n",161);
+			printf("¿Que categor%ca escoges? :o \n",161);
 			printf(" \n");
 			scanf("%d",&opcion1);
 				switch(opcion1){
@@ -159,8 +159,8 @@ int main () {
 			printf(" y con ello se le asignara una puntuacion general , y una en cada categoria.\n");
 			printf(" \n");
 			
-			printf("1-Al inicio del juego, cada uno de los integrantes del mismo deberÃƒÂ¡n de elegir un numero 1-6 incluidos,\n");
-			printf(" el mayor de estos determinara quien va a comenzar la partida (en caso de empate, ambos deberÃƒÂ¡n de \n");
+			printf("1-Al inicio del juego, cada uno de los integrantes del mismo deberÃƒÆ’Ã‚Â¡n de elegir un numero 1-6 incluidos,\n");
+			printf(" el mayor de estos determinara quien va a comenzar la partida (en caso de empate, ambos deberÃƒÆ’Ã‚Â¡n de \n");
 			printf(" elegir de nuevo un numero).\n");
 			printf(" \n");
 			
@@ -176,7 +176,7 @@ int main () {
 			printf(" \n");
 			
 			printf("3-Cuando el jugador acierta la pregunta correspondiente a dicha categoria consigue VIOLETOS (puntos) en \n");
-			printf("  función de la dificultad considerada de esta .\n");
+			printf("  funciÃ³n de la dificultad considerada de esta .\n");
 			printf(" \n");
 			
 			printf("4-El usuario contestara a todas las preguntas de una en una con 4 opciones , sumando VIOLETOS de cada  \n");
