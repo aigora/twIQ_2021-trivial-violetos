@@ -154,37 +154,32 @@ int main () {
 		case 'r':
 		case 'R':
 			system("cls");
-			printf("Trivial-Violetos; es un juego  basado en preguntas y respuestas,en el cual hay 4 categorias de preguntas\n");
-			printf("para el jugador. El usuario tendra que aceptar una serie de preguntas de las distintas categorias,\n");
-			printf(" y con ello se le asignara una puntuacion general , y una en cada categoria.\n");
+			printf("Trivial-Violetos; es un juego  basado en preguntas y respuestas,en el cual hay 4 categor%cas de preguntas\n",161);
+			printf("para el jugador. El usuario tendra que aceptar una serie de preguntas de las distintas categor%cas,\n",161);
+			printf(" y con ello se le asignara una puntuaci%cn general , y una en cada categor%ca.\n",162,161);
 			printf(" \n");
 			
-			printf("1-Al inicio del juego, cada uno de los integrantes del mismo deberÃƒÆ’Ã‚Â¡n de elegir un numero 1-6 incluidos,\n");
-			printf(" el mayor de estos determinara quien va a comenzar la partida (en caso de empate, ambos deberÃƒÆ’Ã‚Â¡n de \n");
-			printf(" elegir de nuevo un numero).\n");
-			printf(" \n");
-			
-			printf("2-Las categorias de este juego son:\n");
+			printf("1-Las categor%cas de este juego son:\n",161);
 			printf(" -Ciencias.\n");
 			printf(" -Deportes.\n");
 			printf(" -Entretenimiento.\n");
-			printf(" -Geografia e historia.\n");
+			printf(" -Geograf%ca e historia.\n",161);
 			printf(" \n");
 			
-			printf("A la hora de elegir una tematica . el jugador decidira el orden de enfrentarse a cada uno de los 4 temas\n");
+			printf("A la hora de elegir una tem%ctica . el jugador decidir%c el orden de enfrentarse a cada uno de los 4 temas\n",160,160);
 			printf("que han sido indicados anteriormente.\n");
 			printf(" \n");
 			
-			printf("3-Cuando el jugador acierta la pregunta correspondiente a dicha categoria consigue VIOLETOS (puntos) en \n");
-			printf("  funciÃ³n de la dificultad considerada de esta .\n");
+			printf("2-Cuando el jugador acierta la pregunta correspondiente a dicha categor%ca consigue VIOLETOS (puntos) en \n",161);
+			printf("  funci%cn de la dificultad considerada de esta .\n",162);
 			printf(" \n");
 			
-			printf("4-El usuario contestara a todas las preguntas de una en una con 4 opciones , sumando VIOLETOS de cada  \n");
-			printf(" categoria si no falla , lo cual no sumara puntuacion alguna , siguiendo las preguntas hasta completar  .\n");
-			printf(" la seccion previamente elegida. Este proceso sera repetido hasta completar todas las categoralt+161as.\n");
+			printf("3-El usuario contestara a todas las preguntas de una en una con 4 opciones , sumando VIOLETOS de cada  \n");
+			printf(" categor%ca si no falla , lo cu%cl no sumar%c puntuaci%cn alguna , siguiendo las preguntas hasta completar  .\n",161,160,160,162);
+			printf(" la secci%cn previamente elegida. Este proceso sera repetido hasta completar todas las categor%cas.\n",162,161);
 			printf(" \n");
 			
-			printf("5.Tras responder a todas las preguntas , se mostrara la puntuacion obtenida y los registros de cada categor%ca.",161);
+			printf("4.Tras responder a todas las preguntas , se mostrara la puntuaci%cn obtenida y los registros de cada categor%ca.",162,161);
 			printf("\n\n");
 			system("pause");
 			break;	//aqui acaban las reglas , simplemente se leen
@@ -195,7 +190,7 @@ int main () {
 			imprimirAdios();
 			return 0;//salir del programa
 		default:
-		printf("la opcion es incorrecta:\n");
+		printf("la opci%cn es incorrecta:\n",162);
 	}
 	
 	}while (opcion<'I','i'||opcion<'S','s'); 
