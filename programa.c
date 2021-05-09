@@ -9,60 +9,18 @@ struct Jugador{
 	char nombre[50];
 	int numerador;
 };
-void imprimirAdios(){
-	printf(":D :D :D :D :D |     H A S T A     | :D :D :D :D :D\n");
-	printf(":D :D :D :D :D |    P R O N T O    | :D :D :D :D :D\n");
-	printf(":D :D :D :D :D |   J U G A D O R   | :D :D :D :D :D\n");
-};
-void imprimirCiencias(){
-	printf("Usted ha elegido la opcion de:       \n");
-	printf("                                     \n");
-	printf("     C            C             S    \n");
-	printf("        I     N       I      S       \n");
-	printf("           E             A           \n");
-};
-void imprimirDeportes(){ 
-	printf("Usted ha elegido la opcion de:  \n");
-	printf("                                          \n");
-	printf("     ****                       ****      \n");
-	printf("    ******   D E P O R T E S   ******     \n");
-	printf("    ******                     ******     \n");
-	printf("     ****                       ****      \n");
-	printf("                                          \n");
+//Prototipos de funciones:
+void imprimirAdios();
 
-};
-void imprimirEntretenimiento(){
-	printf("Usted ha elegido la opcion de:                \n");
-	printf("                                              \n");
-	printf(":P   :P    :P    :P    :P     :P   :P    :P   \n");
-	printf("   :)   :)    :)    :)    :)     :)   :)    :)\n");
-	printf("       E N T R E T E N I M I E N T O          \n");
-	printf(":P   :P    :P    :P    :P     :P   :P    :P   \n");
-	printf("   :)   :)    :)    :)    :)     :)   :)    :)\n");
-};
-void imprimirGeoHis(){
-	printf("Usted ha elegido la opcion de:                  \n");
-	printf("  __________________________________________    \n");
-	printf(" | ---------  G E O F R A F I A  ---------- |   \n");
-	printf(" | ---------                     ---------- |   \n");
-	printf(" | ---------          E          ---------- |   \n");
-	printf(" | ---------                     ---------- |   \n");
-	printf(" | ---------   H I S T O R I A   ---------- |   \n");
-	printf(" |__________________________________________|   \n");
-};
-char menu(){
-	char opcion;
-	printf("-------BIENVENIDO AL MENU DE TRIVIAL_VIOLETOS------- \n");
-	printf("  (: El mejor entretenimiento de estos tiempos :) \n");
-	printf("   \n"); 
-	printf("----> Pulse S para (salir del programa).\n");
-	printf("----> Pulse I para (iniciar partida).\n");
-	printf("----> Pulse R para (reglas del juego).\n");
-	printf("  \n ");
-	fflush(stdin);
-	scanf("%c",&opcion);
-	return opcion;
-};
+void imprimirCiencias();
+
+void imprimirDeportes();
+
+void imprimirEntretenimiento();
+
+void imprimirGeoHis();
+
+char menu();
 
 int main () {
 	
@@ -197,4 +155,75 @@ int main () {
 	
 	return 0;
 }
+
+//Otras funciones
+void imprimirAdios(){
+	printf(":D :D :D :D :D |     H A S T A     | :D :D :D :D :D\n");
+	printf(":D :D :D :D :D |    P R O N T O    | :D :D :D :D :D\n");
+	printf(":D :D :D :D :D |   J U G A D O R   | :D :D :D :D :D\n");
+}
+void imprimirCiencias(){
+	printf("Usted ha elegido la opcion de:       \n");
+	printf("                                     \n");
+	printf("     C            C             S    \n");
+	printf("        I     N       I      S       \n");
+	printf("           E             A           \n");
+}
+void imprimirDeportes(){ 
+	printf("Usted ha elegido la opcion de:  \n");
+	printf("                                          \n");
+	printf("     ****                       ****      \n");
+	printf("    ******   D E P O R T E S   ******     \n");
+	printf("    ******                     ******     \n");
+	printf("     ****                       ****      \n");
+	printf("                                          \n");
+
+}
+void imprimirEntretenimiento(){
+	printf("Usted ha elegido la opcion de:                \n");
+	printf("                                              \n");
+	printf(":P   :P    :P    :P    :P     :P   :P    :P   \n");
+	printf("   :)   :)    :)    :)    :)     :)   :)    :)\n");
+	printf("       E N T R E T E N I M I E N T O          \n");
+	printf(":P   :P    :P    :P    :P     :P   :P    :P   \n");
+	printf("   :)   :)    :)    :)    :)     :)   :)    :)\n");
+}
+void imprimirGeoHis(){
+	printf("Usted ha elegido la opcion de:                  \n");
+	printf("  __________________________________________    \n");
+	printf(" | ---------  G E O F R A F I A  ---------- |   \n");
+	printf(" | ---------                     ---------- |   \n");
+	printf(" | ---------          E          ---------- |   \n");
+	printf(" | ---------                     ---------- |   \n");
+	printf(" | ---------   H I S T O R I A   ---------- |   \n");
+	printf(" |__________________________________________|   \n");
+}
+char menu(){
+	char opcion;
+	printf("-------BIENVENIDO AL MENU DE TRIVIAL_VIOLETOS------- \n");
+	printf("  (: El mejor entretenimiento de estos tiempos :) \n");
+	printf("   \n"); 
+	printf("----> Pulse S para (salir del programa).\n");
+	printf("----> Pulse I para (iniciar partida).\n");
+	printf("----> Pulse R para (reglas del juego).\n");
+	printf("  \n ");
+	fflush(stdin);
+	scanf("%c",&opcion);
+	return opcion;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
