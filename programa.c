@@ -1,27 +1,25 @@
 #include <stdio.h>
+/*	Archivos de cabecera - Bibliotecas */
 #include <string.h>
 #include <unistd.h>
 #include<stdlib.h>
 #include <windows.h>
 
+/* Prototipo de funciones */
+void imprimirAdios();
+void imprimirCiencias();
+void imprimirDeportes();
+void imprimirEntretenimiento();
+void imprimirGeoHis();
+char menu();
 
+/* Definicion de estructuras */
 struct Jugador{
 	char nombre[50];
 	int numerador;
 };
-//Prototipos de funciones:
-void imprimirAdios();
 
-void imprimirCiencias();
-
-void imprimirDeportes();
-
-void imprimirEntretenimiento();
-
-void imprimirGeoHis();
-
-char menu();
-
+/* Main del programa */
 int main () {
 	
 	system("color 57");
@@ -41,7 +39,7 @@ int main () {
 	longitud=strlen(banner);
 	for (repite=1; repite<=2; repite++) /* repite el proceso 3 veces */
 	{
-// ******** IMPRIME EN ORDEN DE IZQUIERDA A DERECHA Y LUEGO DESPLAZA ******** 
+		// ******** IMPRIME EN ORDEN DE IZQUIERDA A DERECHA Y LUEGO DESPLAZA ******** 
 		for(resto=0; resto<=longitud; resto++) // para caracteres restantes a imprimir 
 		{	for (indice=0; indice<=longitud-1-resto; indice++) // seleccion de indices evitando restantes 
 			{
@@ -156,12 +154,14 @@ int main () {
 	return 0;
 }
 
-//Otras funciones
+/* Definicion de las funciones */
+
 void imprimirAdios(){
 	printf(":D :D :D :D :D |     H A S T A     | :D :D :D :D :D\n");
 	printf(":D :D :D :D :D |    P R O N T O    | :D :D :D :D :D\n");
 	printf(":D :D :D :D :D |   J U G A D O R   | :D :D :D :D :D\n");
 }
+
 void imprimirCiencias(){
 	printf("Usted ha elegido la opcion de:       \n");
 	printf("                                     \n");
@@ -169,6 +169,7 @@ void imprimirCiencias(){
 	printf("        I     N       I      S       \n");
 	printf("           E             A           \n");
 }
+
 void imprimirDeportes(){ 
 	printf("Usted ha elegido la opcion de:  \n");
 	printf("                                          \n");
@@ -179,6 +180,7 @@ void imprimirDeportes(){
 	printf("                                          \n");
 
 }
+
 void imprimirEntretenimiento(){
 	printf("Usted ha elegido la opcion de:                \n");
 	printf("                                              \n");
@@ -188,7 +190,9 @@ void imprimirEntretenimiento(){
 	printf(":P   :P    :P    :P    :P     :P   :P    :P   \n");
 	printf("   :)   :)    :)    :)    :)     :)   :)    :)\n");
 }
+
 void imprimirGeoHis(){
+	
 	printf("Usted ha elegido la opcion de:                  \n");
 	printf("  __________________________________________    \n");
 	printf(" | ---------  G E O F R A F I A  ---------- |   \n");
@@ -198,8 +202,10 @@ void imprimirGeoHis(){
 	printf(" | ---------   H I S T O R I A   ---------- |   \n");
 	printf(" |__________________________________________|   \n");
 }
+
 char menu(){
 	char opcion;
+	
 	printf("-------BIENVENIDO AL MENU DE TRIVIAL_VIOLETOS------- \n");
 	printf("  (: El mejor entretenimiento de estos tiempos :) \n");
 	printf("   \n"); 
@@ -209,6 +215,7 @@ char menu(){
 	printf("  \n ");
 	fflush(stdin);
 	scanf("%c",&opcion);
+	
 	return opcion;
 }
 
