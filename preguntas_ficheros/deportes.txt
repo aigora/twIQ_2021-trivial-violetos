@@ -1,0 +1,15 @@
+De que color es la camiseta titular de la seleccion de Nigeria?,Verde,Celeste,Rosa,Negra,1
+A que se denomina hacer un rosco en Tenis?,6-0,5-5,6-6,1-6,1
+En voleibol hasta cuantos toques de le puede dar a la pelota antes de pasarla al campo rival?,Tres,Cuatro,Seis,Infinitas,1
+Estilo de atletismo en el que los corredores llevan un testigo?,Longitud,Salto de latura,Relevo,Fondo,3
+Cuantos tiempos tiene un partido de baloncesto?,2,4,5,3,2 
+Cuanto dura un partido de beisbol?,No es por tiempo,80min,50min,4min,1
+Cuantos jugadores hay en un equipo de beisbol?,Cinco,Nueve,Ocho,Siete,2
+A que país pertenece el equipo europeo Arsenal?,España,Italia,Inglaterra,Holanda,3
+De que color es el cinturon que indica la mayor clasificacion y que visten los maestros de karate?,Blanco,Negro,Azul,Verde,2
+Cuanto dura un partido de rugby?,60 min,80 min,90 min,120 min,2
+Que entrenador es conocido como el "Cholo"?,Jose Mourinho,Pep Guardiola,Luis Enrique,Pablo Simeone,4
+Que equipo de la NBA ha ganado mas campeonatos?,Boston Celtics,Chicago Bulls,Los Lakers,New York Knicks,3
+Cual es el equipo de futbol mas famoso de la ciudad italiana de Turin?,Juventus,Milan,Brescia,Lacio,1
+En que deporte puedes hacer una "tacada"?,Billar,Ajedrez,Bolos,Dardos,1
+Quien es la nadadora olimpica mas conocida a nivel nacional?,Amelia,Dana Pola,Ester Ruiz,Mireya Belmonte,4
