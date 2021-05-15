@@ -1,1 +1,17 @@
-fbwildfebiweufbi
+Que cambio de estado ocurre en la sublimacion?,De solido a liquido,De solido a gaseoso,De gaseoso a liquido,De liquido a solido,2
+De que color es la sange de los peces?,Verde,Marron,Rojo,Azul,3
+Cuantas caras tiene un icosaedro?,20,16,8,24,1
+Cual es el hueso mas pequeño del cuerpo?,Femur,Rotula,Craneo,Estribo,4
+Que estudia la citologia?,Los insectos,Las erupciones cutáneas,Las rocas,Los peces,4
+Donde estan los meniscos?,En las rodillas,En los codos,En la punta del pie,En el perone,1
+A que es igual un numero dividido por si mismo?,Infinito,0,Al numero,1,4
+Como se llama la figura con 12 lados?,Poligono,Decaedro,Polinomio,Dodecaedro,4
+A que refiere el termino epidermis?,Uñas,Pelo,Aguajeros de la nariz,Piel,4
+Que cromosoma es el responsable del Sindrome de Down?,13,40,19,21,4
+Que animal pone los huevos mas pequeños?,Avestruz,Musaraña,Gallina,Codorniz,4
+Quien fue el Inventor de la dinamita?,AlfredNobel,Heisenberg,AntonyStark,WalterWhite,1
+Como se deonomina la inflamación de la piel?,Urticaria,Dermatitis,Soriasis,Acne,2
+Cual de estos NO es un musculo del cuerpo?,Gemelos,Espinal,Sartorio,Cruzado,4
+Que es el esternocleidomastoideo?,Un musculo,Un tendon,Un ligamento,Un hueso,1
+
+
