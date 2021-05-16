@@ -88,7 +88,7 @@ int main () {
 				printf(" \n");
 				printf("Jugador introduzca su nombre de usuario:\n");
 				fflush(stdin);
-				scanf("%s",&nombre);//introduce y se guarda el nombre del jugador
+				scanf("%s",nombre);//introduce y se guarda el nombre del jugador
 				printf(" \n");
 				printf("Perfecto %s ahora deber%cs de elegir una categor%cas para empezar el juego respondiendo con 1,2,3 o 4:\n",nombre,160,161);
 				printf("Las categor%cas de este juego son:\n",161);
