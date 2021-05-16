@@ -159,6 +159,7 @@ int main () {
 			
 			case 's':  
 			case 'S':
+				system("cls");
 				imprimirAdios();
 				return 0;
 				break;
