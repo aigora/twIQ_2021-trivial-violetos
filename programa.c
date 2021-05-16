@@ -1,9 +1,15 @@
-#include <stdio.h>
 /*	Archivos de cabecera - Bibliotecas */
+#include <stdio.h>
 #include <string.h>
 #include <unistd.h>
-#include<stdlib.h>
+#include <stdlib.h>
 #include <windows.h>
+
+#define BUFFER_LEN 1024
+#define PREGUNTA_LEN 200
+#define PREGUNTAS_NUM_PER_FILE 15
+#define RESPUESTA_NUM 4
+#define RESPEUSTA_LEN 50
 
 /* Prototipo de funciones */
 void imprimirAdios();
@@ -12,12 +18,21 @@ void imprimirDeportes();
 void imprimirEntretenimiento();
 void imprimirGeoHis();
 char menu();
+int categoriasPreguntas();
 
 /* Definicion de estructuras */
 struct Jugador{
 	char nombre[50];
 	int numerador;
 };
+
+struct preguntas
+{
+   char pregunta[PREGUNTA_LEN];
+   char respuesta[RESPUESTA_NUM][RESPEUSTA_LEN];
+   int correcta;
+} typedef preguntas_t;
+
 
 /* Main del programa */
 int main () {
@@ -65,90 +80,91 @@ int main () {
 	do{
 
 		system("cls");
-		opcion=menu();
+		opcion = menu();
 	
-	switch (opcion){		//Aquí se organiza el menú en función de la opción elegida
-		case 'i':		//por el usuario .
-		case 'I':
-			printf(" \n");
-			printf("Jugador introduzca su nombre de usuario:\n");
-			fflush(stdin);
-			scanf("%s",&nombre);//introduce y se guarda el nombre del jugador
-			printf(" \n");
-			printf("Perfecto %s ahora deber%cs de elegir una categor%cas para empezar el juego respondiendo con 1,2,3 o 4:\n",nombre,160,161);
-			printf("Las categor%cas de este juego son:\n",161);
-			printf(" 1-Ciencias.\n");
-			printf(" 2-Deportes.\n");
-			printf(" 3-Entretenimiento.\n");
-			printf(" 4-Geografia y Historia.\n");
-			printf("¿Que categor%ca escoges? :o \n",161);
-			printf(" \n");
-			scanf("%d",&opcion1);
+		switch (opcion){		
+			case 'i':		    
+			case 'I':
+				printf(" \n");
+				printf("Jugador introduzca su nombre de usuario:\n");
+				fflush(stdin);
+				scanf("%s",&nombre);//introduce y se guarda el nombre del jugador
+				printf(" \n");
+				printf("Perfecto %s ahora deber%cs de elegir una categor%cas para empezar el juego respondiendo con 1,2,3 o 4:\n",nombre,160,161);
+				printf("Las categor%cas de este juego son:\n",161);
+				printf(" 1-Ciencias.\n");
+				printf(" 2-Deportes.\n");
+				printf(" 3-Entretenimiento.\n");
+				printf(" 4-Geografia y Historia.\n");
+				printf("�Qu categor%ca escoges? :o \n",161);
+				printf(" \n");
+				scanf("%d",&opcion1);
 				switch(opcion1){
 					case 1:
-
+						system("cls");
 						imprimirCiencias();
-						return 0;
+						categoriasPreguntas(".\\preguntas_ficheros\\ciencias.csv");
 						break;
 					case 2:
+						system("cls");
 						imprimirDeportes();
-						return 0;
+						categoriasPreguntas(".\\preguntas_ficheros\\deportes.csv");
 						break;
 					case 3:
+						system("cls");
 						imprimirEntretenimiento();
-						return 0;
+						categoriasPreguntas(".\\preguntas_ficheros\\entretenimiento.csv");
 						break;
 					case 4:
+						system("cls");
 						imprimirGeoHis();
-						return 0;
-						break;
-					
+						categoriasPreguntas(".\\preguntas_ficheros\\GeoHisto.csv");
+						break;	
 				}
+					
+				break;
 				
-			break;
+			case 'r':
+			case 'R':
+				system("cls");
+				printf("Trivial-Violetos; es un juego  basado en preguntas y respuestas,en el cual hay 4 categor%cas de preguntas\n",161);
+				printf("para el jugador. El usuario tendra que aceptar una serie de preguntas de las distintas categor%cas,\n",161);
+				printf(" y con ello se le asignara una puntuaci%cn general , y una en cada categor%ca.\n",162,161);
+				printf(" \n");
+				
+				printf("1-Las categor%cas de este juego son:\n",161);
+				printf(" -Ciencias.\n");
+				printf(" -Deportes.\n");
+				printf(" -Entretenimiento.\n");
+				printf(" -Geograf%ca e historia.\n",161);
+				printf(" \n");
+				
+				printf("A la hora de elegir una tem%ctica . el jugador decidir%c el orden de enfrentarse a cada uno de los 4 temas\n",160,160);
+				printf("que han sido indicados anteriormente.\n");
+				printf(" \n");
+				
+				printf("2-Cuando el jugador acierta la pregunta correspondiente a dicha categor%ca consigue VIOLETOS (puntos) en \n",161);
+				printf("  funci%cn de la dificultad considerada de esta .\n",162);
+				printf(" \n");
+				
+				printf("3-El usuario contestara a todas las preguntas de una en una con 4 opciones , sumando VIOLETOS de cada  \n");
+				printf(" categor%ca si no falla , lo cu%cl no sumar%c puntuaci%cn alguna , siguiendo las preguntas hasta completar  .\n",161,160,160,162);
+				printf(" la secci%cn previamente elegida. Este proceso sera repetido hasta completar todas las categor%cas.\n",162,161);
+				printf(" \n");
+				
+				printf("4.Tras responder a todas las preguntas , se mostrara la puntuaci%cn obtenida y los registros de cada categor%ca.",162,161);
+				printf("\n\n");
+				system("pause");
+				break;	//aqui acaban las reglas , simplemente se leen
 			
-		case 'r':
-		case 'R':
-			system("cls");
-			printf("Trivial-Violetos; es un juego  basado en preguntas y respuestas,en el cual hay 4 categor%cas de preguntas\n",161);
-			printf("para el jugador. El usuario tendra que aceptar una serie de preguntas de las distintas categor%cas,\n",161);
-			printf(" y con ello se le asignara una puntuaci%cn general , y una en cada categor%ca.\n",162,161);
-			printf(" \n");
-			
-			printf("1-Las categor%cas de este juego son:\n",161);
-			printf(" -Ciencias.\n");
-			printf(" -Deportes.\n");
-			printf(" -Entretenimiento.\n");
-			printf(" -Geograf%ca e historia.\n",161);
-			printf(" \n");
-			
-			printf("A la hora de elegir una tem%ctica . el jugador decidir%c el orden de enfrentarse a cada uno de los 4 temas\n",160,160);
-			printf("que han sido indicados anteriormente.\n");
-			printf(" \n");
-			
-			printf("2-Cuando el jugador acierta la pregunta correspondiente a dicha categor%ca consigue VIOLETOS (puntos) en \n",161);
-			printf("  funci%cn de la dificultad considerada de esta .\n",162);
-			printf(" \n");
-			
-			printf("3-El usuario contestara a todas las preguntas de una en una con 4 opciones , sumando VIOLETOS de cada  \n");
-			printf(" categor%ca si no falla , lo cu%cl no sumar%c puntuaci%cn alguna , siguiendo las preguntas hasta completar  .\n",161,160,160,162);
-			printf(" la secci%cn previamente elegida. Este proceso sera repetido hasta completar todas las categor%cas.\n",162,161);
-			printf(" \n");
-			
-			printf("4.Tras responder a todas las preguntas , se mostrara la puntuaci%cn obtenida y los registros de cada categor%ca.",162,161);
-			printf("\n\n");
-			system("pause");
-			break;	//aqui acaban las reglas , simplemente se leen
-			
-			
-		case 's':  
-		case 'S':
-			imprimirAdios();
-			return 0;//salir del programa
-		default:
-		printf("la opci%cn es incorrecta:\n",162);
-	}
-	
+			case 's':  
+			case 'S':
+				imprimirAdios();
+				break;
+			default:
+				printf("la opci%cn es incorrecta:\n",162);
+				break;
+		}
 	}while (opcion<'I','i'||opcion<'S','s'); 
 	
 	return 0;
@@ -169,6 +185,7 @@ void imprimirCiencias(){
 	printf("        I     N       I      S       \n");
 	printf("           E             A           \n");
 }
+
 
 void imprimirDeportes(){ 
 	printf("Usted ha elegido la opcion de:  \n");
@@ -217,6 +234,103 @@ char menu(){
 	scanf("%c",&opcion);
 	
 	return opcion;
+}
+
+int categoriasPreguntas(char * rutaFichero){
+	
+	FILE * fpreguntas;
+	preguntas_t setPreguntas[PREGUNTAS_NUM_PER_FILE];
+	char buffer[BUFFER_LEN];
+	char *elemen;
+	int i, j, respuesta_usuario, contador=0,acumulador=0;
+
+   fpreguntas = fopen(rutaFichero, "r");
+   if (fpreguntas == NULL)
+   {
+      printf("Error al abrir el fichero.\n");
+      return 1;
+   }
+
+   /* Iniciamos contador para llevar la cuenta de las lineas*/
+   i = 0;
+
+   /* Mientras que no lleguemos al fina lde fichero */
+   while (!feof(fpreguntas))
+   {
+
+      /* Vamos a leer una linea del fichero */
+      if (fgets(buffer, BUFFER_LEN - 1, fpreguntas) == NULL)
+         break;
+
+      /* Reiniciamos el contador de valores */
+      j = 0;
+
+      /* Vamos a procesar el buffer */
+      elemen = strtok(buffer, ",");
+
+      /* Vamos sacando los valores separadops por coma de la linea */
+      while (elemen != NULL)
+      {
+
+         if (j == 0)
+         {
+
+            strcpy(setPreguntas[i].pregunta, elemen);
+         }
+         else if (j == RESPUESTA_NUM + 1)
+         {
+
+            setPreguntas[i].correcta = atoi(elemen);
+         }
+         else
+         {
+
+            strcpy(setPreguntas[i].respuesta[j - 1], elemen);
+         }
+
+         elemen = strtok(NULL, ",");
+         j++;
+      }
+
+      /* Incrementamos las lineas */
+      i++;
+   }
+   
+   
+
+   // A PARTIR DE AQUI YA EST�N LAS PREGUNTAS CARGADAS EN EL PROGRAMA
+   for (i = 0; i < PREGUNTAS_NUM_PER_FILE; i++)
+   {
+
+      printf("\n\nPregunta %d:  %s\n\n", i + 1, setPreguntas[i].pregunta);
+      for (j = 0; j < RESPUESTA_NUM; j++)
+      {
+         printf("%d) %s\n", j + 1, setPreguntas[i].respuesta[j]);
+      }
+      printf("\nIntroduzca su respuesta: ");
+      scanf("%d",&respuesta_usuario);
+
+      // ES CORRECTA? -> TENGO QUE TRADUCIR EL STRING A INT -> atoi() -> 
+     
+	  if (setPreguntas[i].correcta == respuesta_usuario ){
+	   printf("CORRECTA :) +1 VIOLETO \n");
+	   acumulador += respuesta_usuario;
+	   contador++; 
+	 } else{
+	 	printf("INCORRECTA :( \n");
+	 }
+      printf("\n-----------------------------------------");
+      system("cls");
+   }
+   
+   printf("\n\n");
+   printf("Has acertado %d preguntas, obtienes en esta categor%ca un total de:  %d VIOLETOS\n",contador,161,contador);
+   printf("Fant%cstico,ha terminado su partida.\n ",160);
+   printf("A continuaci%cn, qu%c desea hacer?\n\n\n",162,130);
+   
+   menu();
+   fclose(fpreguntas);
+   return 0;
 }
 
 
