@@ -96,7 +96,7 @@ int main () {
 				printf(" 2-Deportes.\n");
 				printf(" 3-Entretenimiento.\n");
 				printf(" 4-Geografia y Historia.\n");
-				printf("¿Qu categor%ca escoges? :o \n",161);
+				printf("Que categor%ca escoges? :o \n",161);
 				printf(" \n");
 				scanf("%d",&opcion1);
 				switch(opcion1){
@@ -160,6 +160,7 @@ int main () {
 			case 's':  
 			case 'S':
 				imprimirAdios();
+				return 0;
 				break;
 			default:
 				printf("la opci%cn es incorrecta:\n",162);
