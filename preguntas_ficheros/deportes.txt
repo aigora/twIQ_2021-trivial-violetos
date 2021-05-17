@@ -5,7 +5,7 @@ Estilo de atletismo en el que los corredores llevan un testigo?,Longitud,Salto d
 Cuantos tiempos tiene un partido de baloncesto?,2,4,5,3,2 
 Cuanto dura un partido de beisbol?,No es por tiempo,80min,50min,4min,1
 Cuantos jugadores hay en un equipo de beisbol?,Cinco,Nueve,Ocho,Siete,2
-A que país pertenece el equipo europeo Arsenal?,España,Italia,Inglaterra,Holanda,3
+A que pais pertenece el equipo europeo Arsenal?,Espanya,Italia,Inglaterra,Holanda,3
 De que color es el cinturon que indica la mayor clasificacion y que visten los maestros de karate?,Blanco,Negro,Azul,Verde,2
 Cuanto dura un partido de rugby?,60 min,80 min,90 min,120 min,2
 Que entrenador es conocido como el "Cholo"?,Jose Mourinho,Pep Guardiola,Luis Enrique,Pablo Simeone,4

@@ -1,7 +1,7 @@
 Quien es la mascota de SEGA?,Sonic,Mario,Pac Man,Ryu,1
 A que pelicula de Disney pertenece la cancion "Un mundo ideal"?,Pocahontas,Mulan,Hercules,Aladdin,4
 Como se llama el protagonista de la saga Indiana Jones?,Jack Nicholson,Michael Fox,Harrison Ford,Robin Williams,3
-Cual de ellas es una cantante española?,Chenoa,Ariana Grande,Jennifer Lopez,Alaska,1
+Cual de ellas es una cantante espanola?,Chenoa,Ariana Grande,Jennifer Lopez,Alaska,1
 Como se llama el marido de la Cuqui en " La que se avecina"?, Antonio Recio,Amador Rivas,Sergio Arias,Enrique Pastor,2
 Cuantos colores tiene un cubo de Rubik clasico?,4,6,8,9,2
 Que grupo interpretaba la cancion " Smells like teen spirit "?,Los Beatles,Led Zeppelin,Nirvana,Los Rolling Stones,3
