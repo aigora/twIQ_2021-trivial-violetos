@@ -6,7 +6,7 @@ Que estudia la citologia?,Los insectos,Las erupciones cutaneas,Las rocas,Los pec
 Donde estan los meniscos?,En las rodillas,En los codos,En la punta del pie,En el perone,1
 A que es igual un numero dividido por si mismo?,Infinito,0,Al numero,1,4
 Como se llama la figura con 12 lados?,Poligono,Decaedro,Polinomio,Dodecaedro,4
-A que refiere el termino epidermis?,Unnyas,Pelo,Aguajeros de la nariz,Piel,4
+A que refiere el termino epidermis?,Unyas,Pelo,Aguajeros de la nariz,Piel,4
 Que cromosoma es el responsable del Sindrome de Down?,13,40,19,21,4
 Que animal pone los huevos mas pequenyos?,Avestruz,Musaranya,Gallina,Codorniz,4
 Quien fue el Inventor de la dinamita?,AlfredNobel,Heisenberg,AntonyStark,WalterWhite,1
