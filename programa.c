@@ -300,7 +300,8 @@ int categoriasPreguntas(char * rutaFichero){
    
    
 
-   // A PARTIR DE AQUI YA ESTÁN LAS PREGUNTAS CARGADAS EN EL PROGRAMA
+   /* A PARTIR DE AQUI YA ESTÁN LAS PREGUNTAS CARGADAS EN EL PROGRAMA, mediante el uso de fichero agnóstico y no como fichero de texto si no como (csv): 
+    coma separated  values*/
    for (i = 0; i < PREGUNTAS_NUM_PER_FILE; i++)
    {
 
@@ -315,7 +316,7 @@ int categoriasPreguntas(char * rutaFichero){
       // ES CORRECTA? -> TENGO QUE TRADUCIR EL STRING A INT -> atoi() -> 
      
 	  if (setPreguntas[i].correcta == respuesta_usuario ){
-	   printf("CORRECTA :) +1 VIOLETO \n");
+	   printf("CORRECTA :) +1 VIOLETO \a\n");
 	   acumulador += respuesta_usuario;
 	   contador++; 
 	 } else{
