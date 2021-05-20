@@ -37,7 +37,7 @@ struct preguntas
 /* Main del programa */
 int main () {
 	
-	system("color 57");
+	system("color 57"); //Color de fondo de consola:5--> MORADO, color de texto:7--> BLANCO
     HANDLE hOut;
     hOut = GetStdHandle(STD_OUTPUT_HANDLE);
 	
