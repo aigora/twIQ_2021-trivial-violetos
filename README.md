@@ -9,9 +9,9 @@ Destaca en todos los posibles , y ... ¡Veremos qué te depara el futuro!
 
 ## Integrantes del equipo
 
-- Miguel Águeda Leal , q-103-1 , usuario "miguelagueda1".  
-- Violeta Carrascal Acebrón , q-103-1, usuaria "Violetacarrascal".   
-- Jorge Escobar Arenas , q-103-1, usuario "Escobar-klk".
+- Miguel Águeda Leal , q-103-1 , usuario `miguelagueda1`.  
+- Violeta Carrascal Acebrón , q-103-1, usuaria `Violetacarrascal`.   
+- Jorge Escobar Arenas , q-103-1, usuario `Escobar-klk`.
 
 ***
 
