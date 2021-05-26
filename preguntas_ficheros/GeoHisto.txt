@@ -13,6 +13,3 @@ Con que emperador estuvo casada Cleopatra?,Ptolomeo XIV,Julio Cesar,Marco Antoni
 A que pais pertenece la Isla de Pascua?,Indonesia,Chile,Australia,Es un pais,2
 Cual es la capital del estado de California?,San Francisco,Sacramento,Los Angeles,San Diego,2
 Cual es la capital de Corea Del Sur?,Tokyo,Pyongyang,Tegucigalpa,Seul,4
-
-
-
