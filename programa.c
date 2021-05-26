@@ -225,8 +225,9 @@ void imprimirGeoHis(){
 char menu(){
 	char opcion;
 	
-	printf("-------BIENVENIDO AL MENU DE TRIVIAL_VIOLETOS------- \n");
-	printf("  (: El mejor entretenimiento de estos tiempos :) \n");
+	printf("-------| BIENVENIDO AL MENU DE TRIVIAL_VIOLETOS |------- \n");
+	printf("   \n");
+	printf("    (: El mejor entretenimiento de estos tiempos :) \n");
 	printf("   \n"); 
 	printf("----> Pulse S para (salir del programa).\n");
 	printf("----> Pulse I para (iniciar partida).\n");
