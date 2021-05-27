@@ -290,7 +290,8 @@ void imprimirGeoHis(){
 char menu(){
 	char opcion;
 	
-	printf("-------| BIENVENIDO AL MENU DE TRIVIAL_VIOLETOS |------- \n");
+	printf("   \n"); 
+	printf("  %c%c%c%c%c%c BIENVENIDO AL MENU DE TRIVIAL-VIOLETOS %c%c%c%c%c%c \n",177, 177, 177, 177, 177, 177, 177, 177, 177, 177,177, 177);
 	printf("   \n");
 	printf("    (: El mejor entretenimiento de estos tiempos :) \n");
 	printf("   \n"); 
