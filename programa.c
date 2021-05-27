@@ -22,7 +22,8 @@ int categoriasPreguntas();
 
 /* Definicion de estructuras */
 struct Jugador{
-	char nombre[50];
+	char nombre[50];//Aquí almacena el nombre el jugador.
+	char contras[50];//Aquí su contraseña
 	int numerador;
 };
 
@@ -43,6 +44,11 @@ int main () {
 	
 	char  nombre[50], opcion;
 	int opcion1;
+	///////
+		FILE * pfichero;
+	struct Jugador partida[600];
+	char nFichas=0;
+	int i,longitud1,numero, contador=0;
 	
 
 	printf("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n");
@@ -85,6 +91,65 @@ int main () {
 		switch (opcion){		
 			case 'i':		    
 			case 'I':
+				
+				printf("Introduce una opcion:\n");
+					printf("1-->Registrarse\n");
+					printf("2-->Iniciar sesion\n");
+	
+					pfichero= fopen("datos.txt", "a");//Abrimos fichero.
+						if(pfichero == NULL){
+							printf("No se encuentra el fichero\n");//Caso en el que no se encuentre el fichero sale.
+							return 0;
+   						}
+						while(fscanf(pfichero, "%s %s", partida[nFichas].nombre, partida[nFichas].contras)!= EOF){
+							nFichas++;
+						}
+
+					do{
+	                   scanf("%d", &numero);
+					}while(numero!=1 && numero !=2);
+					
+					if(numero == 2){//Caso para iniciar sesión.
+					do{
+					printf("Usted ya tiene una cuenta\n");
+					printf("Introduce el nombre de usuario:\n");
+					fflush(stdin);
+					scanf("%s",partida[nFichas].nombre);
+					printf("\n");
+					printf("Introduce la contrase%ca(debe tener mas de 4 digitos):\n",164);
+					fflush(stdin);
+					scanf("%s", partida[nFichas].contras);
+					printf("\n");
+					longitud1 = strlen(partida[nFichas].contras);
+					if(longitud1<4){
+						printf("La contrase%ca tiene que ser mayor que 6 caracteres\n",164);
+						printf("\n");
+					}
+	   				}while(longitud1<4);
+						fprintf(pfichero,"Nombre de usuario:%s Contrase%ca:%s\n",partida[nFichas].nombre,164,partida[nFichas].contras);
+						printf("Usuario y contrase%ca CORRECTA\n",164);	
+					}else if(numero == 1){//Caso para registrarse.
+				do{
+					printf("Proceda a registrarse,introduzca su nombre de usuario:\n");
+					scanf("%s", partida[nFichas].nombre);
+					printf("\n");
+					printf("Introduzca su contrase%ca:(debe tener mas de 4 caracteres):\n",164);
+					scanf("%s", partida[nFichas].contras);
+					printf("\n");
+					longitud1 = strlen(partida[nFichas].contras);
+					if(longitud1<4){
+						printf("La contrase%ca tiene que ser mayor que 4 caracteres\n",164);
+					}
+				}while(longitud1<4);
+
+	  				printf("Perfecto!! la creaci%cn de su cuenta ha sido realizada.\n",162);
+	 				printf("\n");
+					fprintf(pfichero,"Nombre de usuario:%s\n Contrasenna:%s\n",partida[nFichas].nombre,partida[nFichas].contras);
+					fclose(pfichero);//cerramos fichero 
+					
+				}
+
+				//Aqui empieza la partida del jugador pidiendole el nombre de usuario.
 				printf(" \n");
 				printf("Jugador introduzca su nombre de usuario:\n");
 				fflush(stdin);
