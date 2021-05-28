@@ -20,3 +20,5 @@ Nombre de usuario:clara
 Nombre de usuario:luis
  Contrasenna:gato123
 Nombre de usuario:david Contrase¤a:valencia
+Nombre de usuario:lola
+ Contrasenna:australia03
